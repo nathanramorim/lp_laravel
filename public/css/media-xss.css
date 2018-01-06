@@ -1,0 +1,48 @@
+@media (min-width: 321px) and (max-width: 375px) {
+    body {
+        background-origin: content-box;
+        background: url('../img/bg_fundo_xs.jpg') no-repeat center top;
+    }
+
+    .box {
+        display: none;
+
+        border-radius: 20px;
+        max-width: 340px;
+        top: 25px;
+        left: 25px;
+        right: 25px;
+    }
+
+    .box p {
+        color: #FFF;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    .box form {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .dobra-a {
+        margin-top: 10rem !important;
+    }
+
+    .respiro-dobra-a {
+        height: 0px;
+    }
+
+    .btn-formulario-display {
+        display: none;
+        padding: 0 100px;
+    }
+    .text-right-mobile{text-align: right !important}
+    .img-custom{max-width: 85% !important;}
+
+    .btn-close {
+        display: inline;
+    }
+}

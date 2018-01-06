@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/ladingpage', function () {
+    return view('landingpage');
 });
+
+Route::get('/obrigado', function () {
+    return view('obrigado');
+});
+
+
+
+Route::get('usuarios','UsersController@index');
+Route::post('/usuarios/cadastrar','UsersController@insert');

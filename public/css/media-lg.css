@@ -1,0 +1,30 @@
+@media (min-width: 1200px) and (max-width: 1440px) {
+    body {
+        background-origin: content-box;
+        background: url('../img/bg_fundo_lg.jpg') no-repeat center top;
+    }
+
+    .box {
+        border-radius: 20px;
+        max-width: 340px;
+
+        right: 60px;
+    }
+
+    .box p {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px 30px;
+        text-align: center;
+    }
+
+    .box form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .dobra-a {
+        height: 400px;
+    }
+}

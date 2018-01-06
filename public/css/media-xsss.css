@@ -1,0 +1,42 @@
+@media (min-width: 1px) and (max-width: 320px) {
+    body {
+        background-origin: content-box;
+        background: url('../img/bg_fundo_xs.jpg') no-repeat center top;
+    }
+
+    .box {
+        display: none;
+
+        border-radius: 20px;
+        max-width: 340px;
+
+        left: 25px;
+        right: 25px;
+    }
+
+    .box p {
+        color: #FFF;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    .box form {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .dobra-a {
+        height: 650px;
+    }
+
+    .btn-formulario-display {
+        display: inline;
+        padding: 0 100px;
+    }
+
+    .btn-close {
+        display: inline;
+    }
+}
