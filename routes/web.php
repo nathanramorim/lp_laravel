@@ -11,8 +11,13 @@
 |
 */
 
-Route::get('/ladingpage', function () {
+Route::get('/', function () {
     return view('landingpage');
+});
+
+Route::get('laravel-version', function() {
+    $laravel = app();
+    return "Your Laravel version is ".$laravel::VERSION;
 });
 
 Route::get('/obrigado', function () {
@@ -21,5 +26,4 @@ Route::get('/obrigado', function () {
 
 
 
-Route::get('usuarios','UsersController@index');
 Route::post('/usuarios/cadastrar','UsersController@insert');
