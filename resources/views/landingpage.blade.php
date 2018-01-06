@@ -196,28 +196,27 @@ $btnregulamento = "REGULAMENTO.PDF";
 
     $("#aguarde").hide();
 
-    // $('form').submit(function () {
-    //     var vemail = $("#myEmail").val();
-    //     var delay = 100;
-    //     $("#submit").attr("disabled", "disabled");
-    //     $("#aguarde").show();
-    //     $("#inscreva").hide();
-    //     $.ajax({
-    //         url: "usuarios/cadastrar",
-    //         type: "POST",
-    //         data: $("#addCommentForm").serializeArray(),
-    //         async: true,
-    //         success: function (html) {
-    //             console.log(html);
-    //             // setTimeout(function () {
-    //             //     if (html == 1) {
-    //             //         document.location = 'obrigado';
-    //             //     }
-    //             // }, delay);
-    //         }
-    //     });
-    //     return false;
-    // });
+    $('form').submit(function () {
+        var vemail = $("#myEmail").val();
+        var delay = 100;
+        $("#submit").attr("disabled", "disabled");
+        $("#aguarde").show();
+        $("#inscreva").hide();
+        $.ajax({
+            url: "usuarios/cadastrar",
+            type: "POST",
+            data: $("#addCommentForm").serializeArray(),
+            async: true,
+            success: function (html) {
+                setTimeout(function () {
+                    if (html == 1) {
+                        document.location = 'obrigado';
+                    }
+                }, delay);
+            }
+        });
+        return false;
+    });
   
 </script>
 </body>

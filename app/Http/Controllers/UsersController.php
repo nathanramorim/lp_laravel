@@ -3,30 +3,30 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use App\UsersLP;
 
 class UsersController extends Controller
 {
 
     public function insert(Request $request){
         $date = Carbon::now()->toDateTimeString();;
-        // $data['id'] = 'DEFAULT';
-        $data['nome'] = $request->input('NomeCompleto');
-        $data['sexo'] = $request->input('sexo');
-        $data['email'] = $request->input('Email');
-        $data['telefone'] = $request->input('Telefone');
-        $data['cep'] = $request->input('cep');
-        $data['endereco'] = $request->input('endereco');
-        $data['bairro'] = $request->input('bairro');
-        $data['cidade'] = $request->input('cidade');
-        $data['uf'] = $request->input('uf');
-        $data['created_at'] = $date;
-        $data['updated_at'] = $date;
 
-        DB::insert('insert into lp_users 
-            (id, nome, sexo, email, telefone, cep, endereco, bairro, cidade, uf, created_at, updated_at) 
-            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',$data);
+        $user = new UsersLP;
+    
+        $user->nome = $request->input('NomeCompleto');
+        $user->sexo = $request->input('sexo');
+        $user->email = $request->input('Email');
+        $user->telefone = $request->input('Telefone');
+        $user->cep = $request->input('cep');
+        $user->endereco = $request->input('endereco');
+        $user->bairro = $request->input('bairro');
+        $user->cidade = $request->input('cidade');
+        $user->uf = $request->input('uf');
+        $user->created_at = $date;
+        $user->updated_at = $date;
+        $user->save();
+        echo 1;
     }
 
     public function getIndex(){}
