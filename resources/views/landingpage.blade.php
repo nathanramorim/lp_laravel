@@ -144,7 +144,7 @@ $btnregulamento = "REGULAMENTO.PDF";
     <!-- DOBRA 1 -->
     <div class="row">
         <!-- ESPAÇO ESQUERDO SOBRA -->
-        <div class="col-xs-12 col-sm-12 col-mdd-auto col-lg-3 col-xl-3"></div>
+        <div class="col-xs-12 col-sm-12 col-mdd-3 col-lg-3 col-xl-3"></div>
 
         <!-- CONTEUDO -->
         <div class="col-xs-12 col-sm-12 col-mdd-9 col-lg-9 col-xl-9 text-right-mobile" id="btn-formulario-a">

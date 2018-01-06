@@ -25,6 +25,10 @@
     }
 
     .dobra-a {
+        margin-top:13rem !important;
+    }
+
+    .respiro-dobra-a {
         height: 400px;
     }
 }
